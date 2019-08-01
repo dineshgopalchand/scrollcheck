@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ScrollCheckDirective } from './common/directives/scroll-check.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScrollCheckDirective
   ],
   imports: [
     BrowserModule,

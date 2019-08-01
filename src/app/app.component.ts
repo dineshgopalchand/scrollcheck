@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'scrollDepth';
+
+  scrollChange(scrollCheckEvent) {
+    console.log(scrollCheckEvent);
+  }
 }
