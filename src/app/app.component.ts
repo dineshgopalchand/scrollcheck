@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollCheckEvent } from './common/directives/scroll-check.directive';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'scrollDepth';
+  scrolledPercent = 0;
 
-  scrollChange(scrollCheckEvent) {
-    console.log(scrollCheckEvent);
+  scrollChange(scrollEvent: ScrollCheckEvent) {
+    console.log(scrollEvent);
+    this.scrolledPercent = scrollEvent.percentage;
   }
 }

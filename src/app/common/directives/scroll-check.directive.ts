@@ -24,3 +24,7 @@ export class ScrollCheckDirective {
     });
   }
 }
+
+export class ScrollCheckEvent {
+  percentage: number;
+}
